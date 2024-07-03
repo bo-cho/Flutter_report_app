@@ -19,6 +19,21 @@ class FirstPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center, // 中央に配置
               children: <Widget>[
+                Align(
+                  alignment: Alignment.centerLeft,                  
+                  child: Container(
+                    width: 200,
+                    child: TextField(
+                      decoration: InputDecoration(
+                      labelText: "名前を入力",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 10,),
                 TextField(
                   decoration: InputDecoration(
                     labelText: "状態を入力",
