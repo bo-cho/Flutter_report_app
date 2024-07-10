@@ -71,8 +71,8 @@ class FirstPage extends StatelessWidget {
             alignment: Alignment.bottomRight,
             child: Padding(
               padding: EdgeInsets.all(20.0),
-              child: TextButton(
-                child: Text("ホームに戻る"),
+              child: ElevatedButton(
+                child: Text("確認ページに戻る"),
                 onPressed: () {
                   Navigator.pop(context);
                 },
